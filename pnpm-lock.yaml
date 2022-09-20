@@ -26,7 +26,6 @@ specifiers:
   stylelint-csstree-validator: ^1.9.0
   stylelint-scss: ^3.21.0
   uuid: ^9.0.0
-  uuidv4: ^6.2.13
   web-vitals: ^2.1.4
 
 dependencies:
@@ -41,7 +40,6 @@ dependencies:
   react-router-dom: 6.4.0_biqbaboplfbrettd7655fr4n2y
   react-scripts: 5.0.1_eslint@7.32.0+react@18.2.0
   uuid: 9.0.0
-  uuidv4: 6.2.13
   web-vitals: 2.1.4
 
 devDependencies:
@@ -2565,10 +2563,6 @@ packages:
 
   /@types/use-sync-external-store/0.0.3:
     resolution: {integrity: sha512-EwmlvuaxPNej9+T4v5AuBPJa2x2UOJVdjCtDHgcDqitUeOtjnJKJ+apYjVcAoBEMjKW1VVFGZLUb5+qqa09XFA==}
-    dev: false
-
-  /@types/uuid/8.3.4:
-    resolution: {integrity: sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==}
     dev: false
 
   /@types/ws/8.5.3:
@@ -10090,13 +10084,6 @@ packages:
   /uuid/9.0.0:
     resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==}
     hasBin: true
-    dev: false
-
-  /uuidv4/6.2.13:
-    resolution: {integrity: sha512-AXyzMjazYB3ovL3q051VLH06Ixj//Knx7QnUSi1T//Ie3io6CpsPu9nVMOx5MoLWh6xV0B9J0hIaxungxXUbPQ==}
-    dependencies:
-      '@types/uuid': 8.3.4
-      uuid: 8.3.2
     dev: false
 
   /v8-compile-cache/2.3.0:

@@ -1,11 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import { addBook } from '../redux/books/books';
+
+/* eslint-disable */
 
 function AddBookForm() {
+  const dispatch = useDispatch();
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
+
   return (
     <form>
-      <input type="text" name="title" id="title" />
-      <input type="text" name="author" id="author" />
-      <button type="submit">Add Book</button>
+      <h2>Add a book</h2>
+      <input
+        placeholder="Book Title"
+        type="text"
+        name="title"
+        value={title}
+        onInput={(e) => setTitle(e.target.value)}
+      />
+      <input
+        placeholder="Author Name"
+        type="text"
+        name="author"
+        value={author}
+        onInput={(e) => setAuthor(e.target.value)}
+      />
+      <button
+        type="button"
+        onClick={() => {
+          dispatch(
+            addBook({
+              title,
+              author,
+              id: uuidv4(),
+            })
+          );
+          setAuthor('');
+          setTitle('');
+        }}
+      >
+        Add Book
+      </button>
     </form>
   );
 }

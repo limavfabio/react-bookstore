@@ -8,8 +8,7 @@ function Booklist() {
     <ul>
       {books.map((book) => (
         <li key={book.title}>
-          <Book title={book.title} author={book.author} />
-          <button type="button">Remove</button>
+          <Book title={book.title} author={book.author} id={book.id} />
         </li>
       ))}
     </ul>

@@ -3,7 +3,7 @@ const ADD = 'bookstore-react/books/ADD';
 const REMOVE = 'bookstore-react/books/REMOVE';
 
 // Reducer
-export default function reducer(state = [], action = {}) {
+export default function booksReducer(state = [], action = {}) {
   switch (action.type) {
     case ADD:
       return [...state, action.book];

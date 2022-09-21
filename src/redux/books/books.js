@@ -66,7 +66,7 @@ export const addBook = (book) => async (dispatch) => {
 
 export const removeBook = (book) => async (dispatch) => {
   await fetch(
-    `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/z4gzcApO94uwV3qBSQiu/books/${book.item_id}`,
+    `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/z4gzcApO94uwV3qBSQiu/books/${book.id}`,
     {
       method: 'DELETE',
       headers: {

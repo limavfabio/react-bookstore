@@ -23,10 +23,7 @@ function Book({ title, author, id, category }) {
         onClick={() => {
           dispatch(
             removeBook({
-              title,
-              author,
               id,
-              category,
             })
           );
         }}

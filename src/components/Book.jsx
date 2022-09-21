@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
 
-function Book({ title, author, id }) {
+/* eslint-disable-next-line */
+function Book({ title, author, id, category }) {
   const dispatch = useDispatch();
 
   return (
@@ -13,6 +14,10 @@ function Book({ title, author, id }) {
         <span> by </span>
         {author}
       </span>
+      <span>
+        Category:
+        {category}
+      </span>
       <button
         type="button"
         onClick={() => {
@@ -21,6 +26,7 @@ function Book({ title, author, id }) {
               title,
               author,
               id,
+              category,
             })
           );
         }}
@@ -34,6 +40,7 @@ function Book({ title, author, id }) {
 Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
 };
 

@@ -7,6 +7,7 @@ function AddBookForm() {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
 
   function postBook(e) {
     e.preventDefault();
@@ -14,11 +15,13 @@ function AddBookForm() {
       addBook({
         title,
         author,
+        category,
         item_id: uuidv4(),
       })
     );
     setTitle('');
     setAuthor('');
+    setCategory('');
   }
 
   return (
@@ -38,6 +41,14 @@ function AddBookForm() {
         name="author"
         value={author}
         onInput={(e) => setAuthor(e.target.value)}
+        required
+      />
+      <input
+        placeholder="Category"
+        type="text"
+        name="caregory"
+        value={category}
+        onInput={(e) => setCategory(e.target.value)}
         required
       />
       <button type="submit">Add Book</button>

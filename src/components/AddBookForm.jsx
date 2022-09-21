@@ -8,8 +8,21 @@ function AddBookForm() {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
 
+  function postBook(e) {
+    e.preventDefault();
+    dispatch(
+      addBook({
+        title,
+        author,
+        item_id: uuidv4(),
+      })
+    );
+    setTitle('');
+    setAuthor('');
+  }
+
   return (
-    <form>
+    <form onSubmit={postBook}>
       <h2>Add a book</h2>
       <input
         placeholder="Book Title"
@@ -17,6 +30,7 @@ function AddBookForm() {
         name="title"
         value={title}
         onInput={(e) => setTitle(e.target.value)}
+        required
       />
       <input
         placeholder="Author Name"
@@ -24,23 +38,9 @@ function AddBookForm() {
         name="author"
         value={author}
         onInput={(e) => setAuthor(e.target.value)}
+        required
       />
-      <button
-        type="button"
-        onClick={() => {
-          dispatch(
-            addBook({
-              title,
-              author,
-              id: uuidv4(),
-            })
-          );
-          setAuthor('');
-          setTitle('');
-        }}
-      >
-        Add Book
-      </button>
+      <button type="submit">Add Book</button>
     </form>
   );
 }

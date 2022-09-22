@@ -13,7 +13,7 @@ export default function booksReducer(state = [], action = {}) {
     case ADD:
       return [...state, action.book];
     case REMOVE:
-      return state.filter((book) => book.id !== action.book.id);
+      return state.filter((book) => book.item_id !== action.book.item_id);
     default:
       return state;
   }

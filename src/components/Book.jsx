@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
 
 /* eslint-disable-next-line */
-function Book({ title, author, id, category }) {
+function Book({ title, author, item_id, category }) {
   const dispatch = useDispatch();
 
   return (
@@ -23,7 +23,7 @@ function Book({ title, author, id, category }) {
         onClick={() => {
           dispatch(
             removeBook({
-              id,
+              item_id,
             })
           );
         }}
@@ -38,7 +38,7 @@ Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
+  item_id: PropTypes.string.isRequired,
 };
 
 export default Book;

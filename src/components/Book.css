@@ -2,7 +2,7 @@
   display: flex;
   border-radius: 10px;
   background: #f4ecec;
-  box-shadow: 6px 6px 12px #beb8b8, -6px -6px 12px #ffffff;
+  box-shadow: 6px 6px 12px #beb8b8, -6px -6px 12px #fff;
   padding: 20px 30px;
   justify-content: space-between;
 }
@@ -45,7 +45,6 @@
 
 .completedness {
   display: flex;
-
   gap: 15px;
 }
 

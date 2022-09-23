@@ -1,15 +1,10 @@
 .bookContainer {
   display: flex;
-  border-radius: 10px;
-  background: #f4ecec;
+  border-radius: 2px;
+  background: #fff;
   box-shadow: 6px 6px 12px #beb8b8, -6px -6px 12px #fff;
   padding: 20px 30px;
   justify-content: space-between;
-}
-
-.bookDetails {
-  display: flex;
-  flex-direction: column;
 }
 
 .bookCategory {
@@ -25,22 +20,19 @@
   font-weight: bold;
 }
 
+.bottomLinks {
+  margin-top: 1rem;
+  cursor: pointer;
+  color: #4386bf;
+  gap: 1rem;
+}
+
 .bookRemoveButton {
   border: none;
   font-size: medium;
   background: none;
   color: #4386bf;
   cursor: pointer;
-}
-
-.bookCommentsLink {
-  cursor: pointer;
-  color: #4386bf;
-}
-
-.bookEditLink {
-  cursor: pointer;
-  color: #4386bf;
 }
 
 .completedness {
@@ -83,8 +75,6 @@
 }
 
 .progress {
-  display: flex;
-  flex-direction: column;
   gap: 6px;
 }
 

@@ -4,6 +4,10 @@ ul {
   padding: 0;
 }
 
+h1 {
+  margin: 0;
+}
+
 h2 {
   margin: 0;
 }
@@ -18,5 +22,14 @@ li {
 
 .container {
   background-color: #fafafa;
-  padding: 20px;
+  padding: 5%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-col {
+  display: flex;
+  flex-direction: column;
 }

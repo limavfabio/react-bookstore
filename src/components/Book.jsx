@@ -24,11 +24,11 @@ function Book({ title, author, item_id, category }) {
 
   return (
     <div className="bookContainer">
-      <div className="bookDetails">
+      <div className="d-flex-col">
         <span className="bookCategory">{category}</span>
         <h2 className="bookTitle">{title}</h2>
         <span className="bookAuthor">{author}</span>
-        <div>
+        <div className="bottomLinks d-flex">
           <span className="bookCommentsLink">Comments</span>
           <button
             className="bookRemoveButton"
@@ -56,7 +56,7 @@ function Book({ title, author, item_id, category }) {
           <span>Completed</span>
         </div>
       </div>
-      <div className="progress">
+      <div className="progress d-flex-col">
         <span>CURRENT CHAPTER</span>
         <span>Chapter 17</span>
         <button

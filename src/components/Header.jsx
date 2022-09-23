@@ -6,7 +6,7 @@ import userAvatar from '../images/userAvatar.png';
 function Header() {
   return (
     <div className="header">
-      <h1>Bookstore</h1>
+      <h1>Bookstore CMS</h1>
       <ul>
         <li>
           <NavLink to="/" className="links">

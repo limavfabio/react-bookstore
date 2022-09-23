@@ -1,24 +1,26 @@
 input {
-  border: solid 1px whitesmoke;
+  border: solid 1px #e8e8e8;
   background: white;
   padding: 10px;
   margin-right: 20px;
+}
+
+.addBookForm input {
+  width: 80%;
 }
 
 .categoryInput {
-  border: solid 1px whitesmoke;
+  border: solid 1px #e8e8e8;
   background: white;
   padding: 10px;
   margin-right: 20px;
+  width: 50%;
 }
 
-form {
-  border-top: solid 1px #e8e8e8;
-  margin-top: 2rem;
-}
-
-form h2 {
-  margin: 0.8em 0;
+.addBookForm h2 {
+  border-top: 1px solid #e8e8e8;
+  margin: 2em 0 1em;
+  padding-top: 1em;
   color: rgb(87, 87, 87);
 }
 
@@ -31,4 +33,5 @@ form button {
   cursor: pointer;
   box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
   font-weight: 600;
+  width: 30%;
 }

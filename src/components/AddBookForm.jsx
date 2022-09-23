@@ -26,52 +26,45 @@ function AddBookForm() {
   }
 
   return (
-    <form onSubmit={postBook}>
+    <div className="addBookForm">
       <h2>Add a book</h2>
-      <input
-        placeholder="Book Title"
-        type="text"
-        name="title"
-        value={title}
-        onInput={(e) => setTitle(e.target.value)}
-        required
-      />
-      <input
-        placeholder="Author Name"
-        type="text"
-        name="author"
-        value={author}
-        onInput={(e) => setAuthor(e.target.value)}
-        required
-      />
-      <select
-        className="categoryInput"
-        name="list"
-        onChange={(e) => {
-          setCategory(e.target.value);
-        }}
-        required
-      >
-        <option value="">Category</option>
-        <option value="Historical">Historical</option>
-        <option value="Horror">Horror</option>
-        <option value="Thriller">Thriller</option>
-        <option value="Romance">Romance</option>
-        <option value="Fantasy">Fantasy</option>
-        <option value="Mystery">Mystery</option>
-        <option value="Science Fiction">Science Fiction</option>
-      </select>
-      {/* <input
-        className="categoryInput"
-        placeholder="Category"
-        type="text"
-        name="category"
-        value={category}
-        onInput={(e) => setCategory(e.target.value)}
-        required
-      /> */}
-      <button type="submit">Add Book</button>
-    </form>
+      <form className="d-flex" onSubmit={postBook}>
+        <input
+          placeholder="Book Title"
+          type="text"
+          name="title"
+          value={title}
+          onInput={(e) => setTitle(e.target.value)}
+          required
+        />
+        <input
+          placeholder="Author Name"
+          type="text"
+          name="author"
+          value={author}
+          onInput={(e) => setAuthor(e.target.value)}
+          required
+        />
+        <select
+          className="categoryInput"
+          name="list"
+          onChange={(e) => {
+            setCategory(e.target.value);
+          }}
+          required
+        >
+          <option value="">Category</option>
+          <option value="Historical">Historical</option>
+          <option value="Horror">Horror</option>
+          <option value="Thriller">Thriller</option>
+          <option value="Romance">Romance</option>
+          <option value="Fantasy">Fantasy</option>
+          <option value="Mystery">Mystery</option>
+          <option value="Science Fiction">Science Fiction</option>
+        </select>
+        <button type="submit">Add Book</button>
+      </form>
+    </div>
   );
 }
 

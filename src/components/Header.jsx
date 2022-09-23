@@ -1,10 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './Header.css';
+import userAvatar from '../images/userAvatar.png';
 
 function Header() {
   return (
-    <div className="Header">
-      <h1>Bookstore</h1>
+    <div className="header">
+      <h1>Bookstore CMS</h1>
       <ul>
         <li>
           <NavLink to="/" className="links">
@@ -18,6 +20,9 @@ function Header() {
           </NavLink>
         </li>
       </ul>
+      <div className="userOval">
+        <img className="userAvatar" src={userAvatar} alt="" />
+      </div>
     </div>
   );
 }

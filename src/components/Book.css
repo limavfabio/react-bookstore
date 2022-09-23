@@ -1,0 +1,90 @@
+.bookContainer {
+  display: flex;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 6px 6px 12px #beb8b8, -6px -6px 12px #fff;
+  padding: 20px 30px;
+  justify-content: space-between;
+}
+
+.bookCategory {
+  color: rgb(87, 87, 87);
+}
+
+.bookTitle {
+  color: #063b69;
+}
+
+.bookAuthor {
+  color: #4386bf;
+  font-weight: bold;
+}
+
+.bottomLinks {
+  margin-top: 1rem;
+  cursor: pointer;
+  color: #4386bf;
+  gap: 1rem;
+}
+
+.bookRemoveButton {
+  border: none;
+  font-size: medium;
+  background: none;
+  color: #4386bf;
+  cursor: pointer;
+}
+
+.completedness {
+  display: flex;
+  gap: 15px;
+}
+
+.circular-progress {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background: conic-gradient(#4395fc 0deg, #ededed 0deg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-progress::before {
+  content: '';
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.progress-value {
+  position: relative;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #4395fc;
+}
+
+.percentage {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+}
+
+.progress {
+  gap: 6px;
+}
+
+.updateProgressButton {
+  background-color: #4395fc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+  font-weight: 600;
+}

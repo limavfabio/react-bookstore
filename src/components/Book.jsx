@@ -53,7 +53,7 @@ function Book({ title, author, item_id, category }) {
 
         <div className="percentage">
           <span>{`${percentage}%`}</span>
-          <span>completed</span>
+          <span>Completed</span>
         </div>
       </div>
       <div className="progress">

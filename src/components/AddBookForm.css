@@ -1,0 +1,29 @@
+input {
+  border: solid 1px whitesmoke;
+  background: white;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.categoryInput {
+  border: solid 1px whitesmoke;
+  background: white;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+form h2 {
+  margin: 0.8em 0;
+  color: rgb(87, 87, 87);
+}
+
+form button {
+  background-color: #4395fc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+  font-weight: 600;
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook } from '../redux/books/books';
+import './AddBookForm.css';
 
 function AddBookForm() {
   const dispatch = useDispatch();
@@ -43,14 +44,32 @@ function AddBookForm() {
         onInput={(e) => setAuthor(e.target.value)}
         required
       />
-      <input
+      <select
+        className="categoryInput"
+        name="list"
+        onChange={(e) => {
+          setCategory(e.target.value);
+        }}
+        required
+      >
+        <option value="">Category</option>
+        <option value="Historical">Historical</option>
+        <option value="Horror">Horror</option>
+        <option value="Thriller">Thriller</option>
+        <option value="Romance">Romance</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Mystery">Mystery</option>
+        <option value="Science Fiction">Science Fiction</option>
+      </select>
+      {/* <input
+        className="categoryInput"
         placeholder="Category"
         type="text"
-        name="caregory"
+        name="category"
         value={category}
         onInput={(e) => setCategory(e.target.value)}
         required
-      />
+      /> */}
       <button type="submit">Add Book</button>
     </form>
   );

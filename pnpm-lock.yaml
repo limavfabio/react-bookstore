@@ -21,6 +21,7 @@ specifiers:
   react-redux: ^8.0.2
   react-router-dom: ^6.4.0
   react-scripts: 5.0.1
+  redux-thunk: ^2.4.1
   stylelint: ^13.13.1
   stylelint-config-standard: ^21.0.0
   stylelint-csstree-validator: ^1.9.0
@@ -39,6 +40,7 @@ dependencies:
   react-redux: 8.0.2_biqbaboplfbrettd7655fr4n2y
   react-router-dom: 6.4.0_biqbaboplfbrettd7655fr4n2y
   react-scripts: 5.0.1_eslint@7.32.0+react@18.2.0
+  redux-thunk: 2.4.1
   uuid: 9.0.0
   web-vitals: 2.1.4
 
@@ -8742,6 +8744,12 @@ packages:
     dependencies:
       indent-string: 4.0.0
       strip-indent: 3.0.0
+
+  /redux-thunk/2.4.1:
+    resolution: {integrity: sha512-OOYGNY5Jy2TWvTL1KgAlVy6dcx3siPJ1wTq741EPyUKfn6W6nChdICjZwCd0p8AZBs5kWpZlbkXW2nE/zjUa+Q==}
+    peerDependencies:
+      redux: ^4
+    dev: false
 
   /redux-thunk/2.4.1_redux@4.2.0:
     resolution: {integrity: sha512-OOYGNY5Jy2TWvTL1KgAlVy6dcx3siPJ1wTq741EPyUKfn6W6nChdICjZwCd0p8AZBs5kWpZlbkXW2nE/zjUa+Q==}
